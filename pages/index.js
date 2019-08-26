@@ -69,11 +69,11 @@ const Index = (props) => {
 
 Index.getInitialProps = async function() {
 
-    // let res = await fetch('https://api.darksky.net/forecast/ceec1978a3c6474afa99f765e463cb84/37.8267,-122.4233')
-    // let data = await res.json();
+    let res = await fetch('https://api.darksky.net/forecast/ceec1978a3c6474afa99f765e463cb84/37.8267,-122.4233')
+    let data = await res.json();
   
     return {
-      weather_report: {}
+      weather_report: data
     };
 };
 

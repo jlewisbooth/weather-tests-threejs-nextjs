@@ -4,7 +4,6 @@ import ModelLoader from './WeatherLoader';
 
 export default class AnimationController {
     constructor() {
-        console.log("inside controller!");  
         
         this.camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 1, 1000 );
         this.camera.position.z = 100;
@@ -16,8 +15,8 @@ export default class AnimationController {
                                                     canvas: document.getElementById('animation-canvas') } );
         this.renderer.setSize( window.innerWidth, window.innerHeight );
 
-        this.renderer.shadowMapEnabled = true;
-        this.renderer.shadowMapType = THREE.PCFSoftShadowMap;
+        this.renderer.shadowMap.enabled = true;
+        this.renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
         this.controls = new OrbitControls(this.camera, this.renderer.domElement);
         this.controls.enableZoom = true;

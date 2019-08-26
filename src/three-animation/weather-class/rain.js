@@ -51,7 +51,6 @@ export default class Rain {
     }
 
     remove() {
-        console.log("REMOVING RAIN");
         this.animating = false;
         this.scene.remove(this.rain);
         this.rain = null;

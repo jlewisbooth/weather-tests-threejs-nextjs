@@ -26,11 +26,10 @@ const WeatherDiv = styled(AnimatedDiv)`
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 200px;
-    height: 200px;
     background-color: grey;
     border-radius: 20px;
     z-index: 1;
+    padding: 20px;
 `;
 
 const AnimatedIcon = posed.object({
@@ -56,6 +55,8 @@ export default function WeatherReporter(props) {
     useEffect(() => {
         
     },[showWeatherReport]);
+
+    console.log(props);
 
 
     return (
