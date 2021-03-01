@@ -33,7 +33,7 @@
     "react-pose": "^4.0.8",
     "reactn": "^2.2.1",
     "styled-components": "^4.3.2",
-    "three": "^0.107.0",
+    "three": "^0.125.0",
     "three-gltf-loader": "^1.107.0",
     "three-orbitcontrols": "^2.102.2"
   }
